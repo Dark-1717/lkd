@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKD Travels - Sri Lanka Travel Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2 class="logo-animate">LKD Travels</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#packages" class="nav-link">Packages</a>
+                <a href="#vehicles" class="nav-link">Vehicles</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="language-selector">
+                        <button class="lang-btn active" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="hi">हिं</button>
+                    </div>
+                </div>
+            </div>
+            <img src="images/lkdlogo.jpg" alt="LKD Travels Logo" class="nav-logo-img">
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-video">
+            <video autoplay muted loop playsinline poster="images/weligama_beach.JPG">
+                <source src="images/Timeline 1.mp4" type="video/mp4">
+                <source src="images/sri-lanka-highlights.webm" type="video/webm">
+                <!-- Fallback image if video doesn't load -->
+                <img src="images/weligama_beach.JPG" alt="Sri Lanka Landscape">
+            </video>
+            <div class="video-overlay">
+                <button class="play-pause-btn" id="play-pause-btn">
+                    <i class="fas fa-play"></i>
+                </button>
+            </div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Discover Sri Lanka</span>
+                    <br>With LKD Travels
+                </h1>
+                <p class="hero-description">
+                    Experience the beauty of Sri Lanka with our expertly crafted 7-day highlights itinerary. 
+                    From ancient forts to pristine beaches, we'll take you on an unforgettable journey.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#packages" class="btn btn-primary">View Packages</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="container">
+            <h2 class="section-title">7-Day Sri Lanka Highlights Itinerary</h2>
+            <div class="packages-grid">
+                <div class="package-card" data-day="1">
+                    <div class="package-image">
+                        <img src="images/welcome.JPG" alt="Negombo Beach">
+                    </div>
+                    <div class="package-content">
+                        <h3>Day 1: Arrival in Sri Lanka</h3>
+                        <ul>
+                            <li>Arrive at Bandaranaike International Airport (CMB)</li>
+                            <li>Transfer to Negombo coastal town</li>
+                            <li>Check-in at hotel</li>
+                            <li>Evening at leisure with optional beach walk</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="package-card" data-day="2">
+                    <div class="package-image">
+                        <img src="images/sigiriya.jpg" alt="Sigiriya Fort">
+                    </div>
+                    <div class="package-content">
+                        <h3>Day 2: Sigiriya & Dambulla</h3>
+                        <ul>
+                            <li>Early departure from Negombo</li>
+                            <li>Climb Sigiriya Rock Fortress</li>
+                            <li>Visit Dambulla Cave Temple</li>
+                            <li>Overnight in Dambulla</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="package-card" data-day="3">
+                    <div class="package-image">
+                        <img src="images/kandy_temple_of_tooth.jpg" alt="Kandy Temple">
+                    </div>
+                    <div class="package-content">
+                        <h3>Day 3: Kandy & Peradeniya</h3>
+                        <ul>
+                            <li>Travel to Kandy (2.5 hours)</li>
+                            <li>Visit Temple of the Tooth</li>
+                            <li>Explore Royal Botanic Gardens</li>
+                            <li>Visit Sandagiri Maha Seya</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="package-card" data-day="4">
+                    <div class="package-image">
+                        <img src="images/nuwaraeliya.jpg" alt="Tea Plantation">
+                    </div>
+                    <div class="package-content">
+                        <h3>Day 4: Nuwara Eliya</h3>
+                        <ul>
+                            <li>Visit Ramayana-linked sites</li>
+                            <li>Seetha Amman Temple</li>
+                            <li>Tea estate and factory tour</li>
+                            <li>Gregory Lake stroll</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="package-card" data-day="5">
+                    <div class="package-image">
+                        <img src="images/ella_nine_arch_bridge.jpg" alt="Nine Arches Bridge">
+                    </div>
+                    <div class="package-content">
+                        <h3>Day 5: Ella & Southern Coast</h3>
+                        <ul>
+                            <li>Ravana Falls stop</li>
+                            <li>Nine Arches Bridge</li>
+                            <li>Ravana Cave history</li>
+                            <li>Arrive at Weligama/Mirissa</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="package-card" data-day="6">
+                    <div class="package-image">
+                        <img src="images/beach.jpg" alt="Mirissa Beach">
+                    </div>
+                    <div class="package-content">
+                        <h3>Day 6: Southern Beaches</h3>
+                        <ul>
+                            <li>Weligama Beach relaxation</li>
+                            <li>Mirissa Beach exploration</li>
+                            <li>Sunset over Indian Ocean</li>
+                            <li>Rumassala legend</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="package-card" data-day="7">
+                    <div class="package-image">
+                        <img src="images/kelaniya_temple.JPG" alt="Kelaniya Temple">
+                    </div>
+                    <div class="package-content">
+                        <h3>Day 7: Departure</h3>
+                        <ul>
+                            <li>Visit Kelaniya Temple</li>
+                            <li>Vibhishan's Palace</li>
+                            <li>Transfer to airport</li>
+                            <li>Farewell to Sri Lanka</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehicles Section -->
+    <section id="vehicles" class="vehicles">
+        <div class="container">
+            <h2 class="section-title">Our Premium Vehicles</h2>
+            <div class="vehicles-grid">
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="images/toyota_axio.JPG" alt="Toyota Axio">
+                    </div>
+                    <h3>Toyota Axio</h3>
+                    <p>Comfortable sedan perfect for small groups and families</p>
+                </div>
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="images/toyota_premio.jpg" alt="Toyota Premio">
+                    </div>
+                    <h3>Toyota Premio</h3>
+                    <p>Premium sedan with extra comfort and space</p>
+                </div>
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="images/toyota_kdh.jpg" alt="Toyota KDH Van">
+                    </div>
+                    <h3>Toyota KDH (Van)</h3>
+                    <p>Spacious van ideal for larger groups and families</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About LKD Travels</h2>
+                    <p>We are a premier Sri Lanka travel agency dedicated to providing exceptional travel experiences. Our team of experienced guides and drivers ensure your journey through this beautiful island nation is safe, comfortable, and unforgettable.</p>
+                    <p>With our carefully crafted itineraries and premium vehicles, we take you to the most iconic destinations while sharing the rich history and culture of Sri Lanka.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/lkdlogo.jpg" alt="Sri Lanka Tourism">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <h4>Lionel Ravi</h4>
+                            <p>Your Travel Expert</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone / WhatsApp</h4>
+                            <p>+94 765 517 301</p>
+                            <p>+91 962 527 0921</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Sri Lanka</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="https://wa.me/94765517301" class="social-icon whatsapp" target="_blank" rel="noopener">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://facebook.com/lkdtravels" class="social-icon facebook" target="_blank" rel="noopener">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://instagram.com/lkdtravels" class="social-icon instagram" target="_blank" rel="noopener">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://youtube.com/@lkdtravels" class="social-icon youtube" target="_blank" rel="noopener">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="mailto:info@lkdtravels.com" class="social-icon email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LKD Travels</h3>
+                    <p>Your trusted partner for unforgettable Sri Lanka adventures.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#vehicles">Vehicles</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Phone: +94 765 517 301</p>
+                    <p>WhatsApp: +91 962 527 0921</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/94765517301" class="social-icon whatsapp" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://facebook.com/lkdtravels" class="social-icon facebook" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/lkdtravels" class="social-icon instagram" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com/@lkdtravels" class="social-icon youtube" target="_blank" rel="noopener">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LKD Travels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
